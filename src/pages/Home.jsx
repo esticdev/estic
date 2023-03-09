@@ -1,5 +1,8 @@
 import { Layout, Button, Tooltip } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
+import Image from "../img.jpeg";
+
+
 const { Header, Content, Footer } = Layout;
 
 const Home = () => {
@@ -19,9 +22,10 @@ const Home = () => {
                         width: 120,
                         height: 31,
                         margin: '16px 24px 16px 0',
-                        background: 'black',
                     }}
-                />
+                >
+                    <img style={{width:'100%'}} alt="logo" src={Image} />
+                </div>
                 <div
                     style={{
                         float: 'right'
