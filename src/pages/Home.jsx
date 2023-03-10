@@ -1,13 +1,14 @@
-import { Layout, Button, Tooltip } from 'antd';
+import { Layout, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import Image from "../img.jpeg";
+import SelectHouseType from '../components/SelectHouseType';
 
 
 const { Header, Content, Footer } = Layout;
 
 const Home = () => {
     return (
-        <Layout style={{background:'white'}}>
+        <Layout style={{ background: 'white' }}>
             <Header
                 style={{
                     background: 'transparent',
@@ -24,29 +25,32 @@ const Home = () => {
                         margin: '16px 24px 16px 0',
                     }}
                 >
-                    <img style={{width:'100%'}} alt="logo" src={Image} />
+                    <img style={{ width: '100%' }} alt="logo" src={Image} />
                 </div>
                 <div
                     style={{
                         float: 'right'
                     }}
-                ><Tooltip title="search">
-                        <Button style={{background: 'transparent'}} shape="circle" icon={<SearchOutlined />} />
-                    </Tooltip></div>
+                ></div>
             </Header>
             <Content style={{ padding: '0px 50px' }}>
-                <div>
-                    <p style={{fontFamily:'Playfair Display', fontSize:'60px', float:'left'}}>Discover a place<br /> you'll love to live</p>
-                    <img style={{ width: '100%' }} alt='luxury real estate' src='https://imgs.search.brave.com/HY8ZyYnAEDLBTVIg6D_x3t9FD6m-YnDMHODpazoS7QM/rs:fit:1200:800:1/g:ce/aHR0cHM6Ly9sdXhw/b3J0LnMzLmFtYXpv/bmF3cy5jb20vMTAy/MDYvM0YyRjkxODkt/Q0M5NC00QjMxLUIx/RTEtQUIyRkI0QzMx/OUEwJTJCQUIyRkI0/QzMxOUEwXzAxMF9I/LmpwZw' />
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <p style={{ fontFamily: 'Playfair Display', fontSize: '60px', float: 'left' }}>Discover a place<br /> you'll love to live</p>
+                    <div style={{ display: 'flex', justifyContent: 'center', width: '60%' }}>
+                        <SelectHouseType />
+                    </div>
+                    <Button style={{ background: 'transparent' }} shape="circle" icon={<SearchOutlined />} />
                 </div>
+                <img style={{ width: '100%' }} alt='luxury real estate' src='https://imgs.search.brave.com/HY8ZyYnAEDLBTVIg6D_x3t9FD6m-YnDMHODpazoS7QM/rs:fit:1200:800:1/g:ce/aHR0cHM6Ly9sdXhw/b3J0LnMzLmFtYXpv/bmF3cy5jb20vMTAy/MDYvM0YyRjkxODkt/Q0M5NC00QjMxLUIx/RTEtQUIyRkI0QzMx/OUEwJTJCQUIyRkI0/QzMxOUEwXzAxMF9I/LmpwZw' />
             </Content>
             <Footer
                 style={{
+                    background: 'transparent',
                     textAlign: 'center',
                 }}
             >
             </Footer>
-        </Layout>
+        </Layout >
     );
 };
 export default Home;
