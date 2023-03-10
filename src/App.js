@@ -1,11 +1,20 @@
 import './App.css';
 import Home from "./pages/Home"
+import { ConfigProvider } from 'antd';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          fontFamily:'Playfair Display',
+        },
+      }}
+    >
+      <div className="App">
+        <Home />
+      </div>
+    </ConfigProvider>
   );
 }
 
