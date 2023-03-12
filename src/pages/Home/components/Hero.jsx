@@ -1,12 +1,12 @@
 import { Layout, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import Image from "../img.jpeg";
-import SelectHouseType from '../components/SelectHouseType';
+import Image from "../../../img.jpeg";
+import SelectHouseType from '../../../components/SelectHouseType';
 
 
 const { Header, Content, Footer } = Layout;
 
-const Home = () => {
+const Hero = () => {
     return (
         <Layout style={{ background: 'white' }}>
             <Header
@@ -53,4 +53,4 @@ const Home = () => {
         </Layout >
     );
 };
-export default Home;
+export default Hero;
