@@ -1,6 +1,7 @@
 import './App.css';
-import Hero from "./pages/Home/components/Hero"
-import About from "./pages/Home/components/About"
+import Hero from "./pages/Home/components/Hero";
+import About from "./pages/Home/components/About";
+import Carousel from "./pages/Home/components/Carousel";
 import Navbar from './components/Navigation';
 import { ConfigProvider } from 'antd';
 
@@ -17,6 +18,7 @@ function App() {
         <Navbar />
         <Hero id="home" />
         <About id="about" />
+        <Carousel />
       </div>
     </ConfigProvider>
   );
