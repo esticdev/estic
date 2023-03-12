@@ -1,6 +1,7 @@
 import './App.css';
 import Hero from "./pages/Home/components/Hero"
 import About from "./pages/Home/components/About"
+import Navbar from './components/Navigation';
 import { ConfigProvider } from 'antd';
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
       }}
     >
       <div className="App">
-        <Hero />
-        <About />
+        <Navbar />
+        <Hero id="home" />
+        <About id="about" />
       </div>
     </ConfigProvider>
   );
