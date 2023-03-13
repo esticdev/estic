@@ -5,6 +5,7 @@ const Navbar = () => (
         <div
             style={{
                 padding: '20px',
+                backgroundColor:'white'
             }}
         >
             <Anchor
@@ -19,6 +20,11 @@ const Navbar = () => (
                         key: 'about',
                         href: '/about',
                         title: 'ABOUT',
+                    },
+                    {
+                        key: 'properties',
+                        href: '/properties',
+                        title: 'PROPERTIES',
                     }
                 ]}
             />

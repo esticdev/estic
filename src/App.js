@@ -4,6 +4,7 @@ import About from "./pages/Home/components/About";
 import Carousel from "./pages/Home/components/Carousel";
 import Navbar from './components/Navigation';
 import { ConfigProvider } from 'antd';
+import PublicRoutes from './routes/PublicRoutes';
 
 function App() {
   return (
@@ -16,9 +17,7 @@ function App() {
     >
       <div className="App">
         <Navbar />
-        <Hero id="home" />
-        <About id="about" />
-        <Carousel />
+        <PublicRoutes />
       </div>
     </ConfigProvider>
   );
