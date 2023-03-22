@@ -25,6 +25,16 @@ const Navbar = () => (
                         key: 'properties',
                         href: '/properties',
                         title: 'PROPERTIES',
+                    },
+                    {
+                        key: 'contact-us',
+                        href: '/contact-us',
+                        title: 'CONTACT US',
+                    },
+                    {
+                        key: 'join-us',
+                        href: '/join-us',
+                        title: 'JOIN US',
                     }
                 ]}
             />
