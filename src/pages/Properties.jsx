@@ -17,16 +17,10 @@ const ImagesCarousel = () => {
             <SelectHouseType />
             <Row
                 style={{ marginTop: "20px" }}
-                gutter={{
-                    xs: 8,
-                    sm: 16,
-                    md: 24,
-                    lg: 32,
-                }}
             >
                 {data.map((item) => {
                     return (
-                        <Col className="gutter-row" span={6}>
+                        <Col xs={24} sm={12} md={10} lg={6} className="gutter-row" span={6}>
                             <div style={style}>
                                 <Card
                                     style={{
