@@ -5,7 +5,9 @@ const JoinUsForm = () => {
     // const [form] = Form.useForm();
     return (
         <>
-            <Title level={1}>Join Us</Title>
+            <div style={{ textAlign: 'left', margin: "50px" }}>
+                <Title level={1}>Join Us</Title>
+            </div>
         </>
     );
 };
