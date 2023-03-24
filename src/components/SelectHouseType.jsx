@@ -63,9 +63,6 @@ const SelectHouseType = () => {
             onChange={handleChange}
             showSearch
             size={'large'}
-            style={{
-                width: '80%',
-            }}
             options={(data || []).map((d) => ({
                 value: d.value,
                 label: d.text,

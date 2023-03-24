@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import About from "../pages/About";
 import Hero from "../pages/Home/components/Hero";
-import Carousel from "../pages/Carousel";
+import Carousel from "../pages/Properties";
 import ContactForm from "../pages/ContactForm";
 import JoinUsForm from "../pages/JoinUsForm";
 
