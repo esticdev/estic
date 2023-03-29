@@ -5,7 +5,6 @@ import Hero from "../pages/Home/components/Hero";
 import Carousel from "../pages/Properties/Properties";
 import PropertyDetails from "../pages/Properties/PropertyDetails";
 import ContactForm from "../pages/ContactForm";
-import JoinUsForm from "../pages/JoinUsForm";
 
 const PublicRoutes = (props) => {
   return (
@@ -15,7 +14,6 @@ const PublicRoutes = (props) => {
       <Route path="/properties" element={<Carousel />} />
       <Route path="/properties/details" element={<PropertyDetails />} />
       <Route path="/contact-us" element={<ContactForm />} />
-      <Route path="/join-us" element={<JoinUsForm />} />
     </Routes>
   );
 };

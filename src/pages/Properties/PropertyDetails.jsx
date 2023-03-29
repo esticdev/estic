@@ -2,7 +2,7 @@ import { Descriptions } from "antd";
 // import Gallery from "../../components/Gallery";
 
 const PropertyDetails = (props) => (
-  <div style={{ textAlign: "left", margin: "50px" }}>
+  <div>
     {/* <Gallery /> */}
     <Descriptions
       title="Property Details"

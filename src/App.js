@@ -1,7 +1,6 @@
 import './App.css';
-import Navbar from './components/Navigation';
 import { ConfigProvider } from 'antd';
-import PublicRoutes from './routes/PublicRoutes';
+import AppLayout from "./Layout";
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
       }}
     >
       <div className="App">
-        <Navbar />
-        <PublicRoutes />
+        <AppLayout />
       </div>
     </ConfigProvider>
   );

@@ -15,6 +15,7 @@ const PropertyCard = (props) => {
 
   return (
     <Card
+      onClick={handleNavigate}
       style={{
         width: 300,
       }}

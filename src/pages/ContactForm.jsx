@@ -5,7 +5,7 @@ const ContactForm = () => {
   const [form] = Form.useForm();
   return (
     <>
-      <div style={{ textAlign: "left", margin: "50px" }}>
+      <div>
         <Title level={1}>Contact Us</Title>
         <Form form={form} layout="vertical">
           <Form.Item label="Name" required>

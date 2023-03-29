@@ -1,6 +1,6 @@
 import { Layout } from "antd";
 import Image from "../../../img.jpeg";
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 const Hero = () => {
   return (
@@ -47,12 +47,6 @@ const Hero = () => {
           src="https://imgs.search.brave.com/HY8ZyYnAEDLBTVIg6D_x3t9FD6m-YnDMHODpazoS7QM/rs:fit:1200:800:1/g:ce/aHR0cHM6Ly9sdXhw/b3J0LnMzLmFtYXpv/bmF3cy5jb20vMTAy/MDYvM0YyRjkxODkt/Q0M5NC00QjMxLUIx/RTEtQUIyRkI0QzMx/OUEwJTJCQUIyRkI0/QzMxOUEwXzAxMF9I/LmpwZw"
         />
       </Content>
-      <Footer
-        style={{
-          background: "transparent",
-          textAlign: "center",
-        }}
-      ></Footer>
     </Layout>
   );
 };

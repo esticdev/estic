@@ -5,7 +5,7 @@ const { Paragraph, Title } = Typography;
 
 const About = () => {
   return (
-    <Typography style={{ textAlign: "left", padding: "0px 50px" }}>
+    <Typography>
       <Title level={1}>About Us</Title>
       <Paragraph style={{ fontSize: "20px" }}>
         Welcome to Estic, a luxury real estate company dedicated to helping you
