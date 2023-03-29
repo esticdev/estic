@@ -1,19 +1,10 @@
-import { Col, Row } from "antd";
+import { Gallery } from "react-grid-gallery";
+import { images } from "./images";
 
-const Gallery = () => (
-  <Row>
-    <Col xs={20} sm={16} md={12} lg={8} xl={4}>
-      Col
-    </Col>
-    <Col xs={20} sm={16} md={12} lg={8} xl={4}>
-      Col
-    </Col>
-    <Col xs={20} sm={16} md={12} lg={8} xl={4}>
-      Col
-    </Col>
-    <Col xs={20} sm={16} md={12} lg={8} xl={4}>
-      Col
-    </Col>
-  </Row>
-);
-export default Gallery;
+export default function PropertyGallery() {
+  return (
+    <div>
+      <Gallery enableImageSelection={false} images={images} />
+    </div>
+  );
+}

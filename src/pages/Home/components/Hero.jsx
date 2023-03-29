@@ -16,20 +16,14 @@ const Hero = () => {
         <div
           style={{
             float: "left",
-            width: 120,
-            height: 31,
-            margin: "16px 24px 16px 0",
+            maxWidth: 120,
+            maxHeight: 31,
           }}
         >
           <img style={{ width: "100%" }} alt="logo" src={Image} />
         </div>
-        <div
-          style={{
-            float: "right",
-          }}
-        ></div>
       </Header>
-      <Content style={{ padding: "0px 50px" }}>
+      <Content>
         <div style={{ display: "flex", alignItems: "center" }}>
           <p
             style={{
