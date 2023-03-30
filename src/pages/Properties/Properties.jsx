@@ -3,7 +3,6 @@ import PropertyCard from "../../components/PropertyCard";
 import SelectHouseType from "../../components/SelectHouseType";
 import data from "../../redux/data.json";
 
-
 const style = {
   padding: "8px 0",
 };
@@ -16,9 +15,17 @@ const Porperties = () => {
       <Title level={1}>Properties Showcase</Title>
       <SelectHouseType />
       <Row style={{ marginTop: "20px" }}>
-        {data.map((item,index) => {
+        {data.map((item) => {
           return (
-            <Col xs={24} sm={12} md={10} lg={6} className="gutter-row" span={6}>
+            <Col
+              key={item.id}
+              xs={24}
+              sm={12}
+              md={10}
+              lg={6}
+              className="gutter-row"
+              span={6}
+            >
               <div style={style}>
                 <PropertyCard props={item} />
               </div>
