@@ -22,7 +22,7 @@ const PropertyCard = (props) => {
       cover={<img alt={props.props.img.alt} src={props.props.img.src} />}
       actions={[
         `${props.props.price}`,
-        <ArrowRightOutlined onClick={handleNavigate} key="more" />,
+        <ArrowRightOutlined key="more" />,
       ]}
     >
       <Meta

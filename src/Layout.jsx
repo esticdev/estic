@@ -1,7 +1,10 @@
 import { Layout } from 'antd';
 import Navbar from './components/Navigation';
 import PublicRoutes from './routes/PublicRoutes';
+import Logo from './components/Logo';
+
 const { Content, Footer } = Layout;
+
 const AppLayout = () => {
   const contentStyle = {
     textAlign: 'left',
@@ -13,6 +16,7 @@ const AppLayout = () => {
     <Layout className="layout">
       <Navbar />
       <Content style={contentStyle}>
+        <Logo />
         <PublicRoutes />
       </Content>
       <Footer
