@@ -1,28 +1,9 @@
 import { Layout } from "antd";
-import Image from "../../../img.jpeg";
-const { Header, Content } = Layout;
+const { Content } = Layout;
 
 const Hero = () => {
   return (
     <Layout style={{ background: "white" }}>
-      <Header
-        style={{
-          background: "transparent",
-          top: 0,
-          zIndex: 1,
-          width: "100%",
-        }}
-      >
-        <div
-          style={{
-            float: "left",
-            maxWidth: 120,
-            maxHeight: 31,
-          }}
-        >
-          <img style={{ width: "100%" }} alt="logo" src={Image} />
-        </div>
-      </Header>
       <Content>
         <div style={{ display: "flex", alignItems: "center" }}>
           <p

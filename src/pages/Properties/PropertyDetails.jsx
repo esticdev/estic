@@ -2,7 +2,8 @@ import { Descriptions } from "antd";
 import PropertyGallery from "../../components/Gallery";
 
 const PropertyDetails = (props) => (
-  <div>
+  <div style={{ marginTop: "30px" }}>
+    <PropertyGallery />
     <Descriptions
       title="Fort Dallas - Texas"
       bordered
@@ -15,6 +16,8 @@ const PropertyDetails = (props) => (
         xs: 1,
       }}
     >
+      <br />
+      <br />
       <Descriptions.Item label="Price">Rs. 7,42,68,600</Descriptions.Item>
       <Descriptions.Item label="Bedrooms">8</Descriptions.Item>
       <Descriptions.Item label="Bathrooms">8</Descriptions.Item>
@@ -58,9 +61,6 @@ const PropertyDetails = (props) => (
         <b>KARNATAKA RERA NO.</b>: PRM/KA/RERA/1251/446/AG/220225/002802
       </Descriptions.Item>
     </Descriptions>
-    <br />
-    <br />
-    <PropertyGallery />
   </div>
 );
 
