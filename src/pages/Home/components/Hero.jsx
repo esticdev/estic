@@ -3,7 +3,7 @@ const { Content } = Layout;
 
 const Hero = () => {
   return (
-    <Layout style={{ background: "white" }}>
+    <Layout style={{ background: "#231F20", padding:"50px" }}>
       <Content>
         <div style={{ display: "flex", alignItems: "center" }}>
           <p
@@ -11,6 +11,7 @@ const Hero = () => {
               fontFamily: "Playfair Display",
               fontSize: "60px",
               float: "left",
+              color:'#EAEAEA',
             }}
           >
             Discover a place you'll love to live

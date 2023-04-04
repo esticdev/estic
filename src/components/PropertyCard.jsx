@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { Avatar, Card } from "antd";
+import "./cardStyles.css";
 
 const { Meta } = Card;
 
@@ -18,6 +19,8 @@ const PropertyCard = (props) => {
       onClick={handleNavigate}
       style={{
         width: 300,
+        backgroundColor:"#EAEAEA",
+        color:"#8e793e"
       }}
       cover={<img alt={props.props.img.alt} src={props.props.img.src} />}
       actions={[

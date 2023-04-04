@@ -1,25 +1,23 @@
 import { Anchor } from 'antd';
+import Logo from './Logo';
+
 
 const Navbar = () => (
     <>
         <div
             style={{
-                padding: '20px',
-                backgroundColor:'white'
+                padding: '20px'
             }}
         >
+            <Logo />
             <Anchor
+                style={{float:'right'}}
                 direction="horizontal"
                 items={[
                     {
                         key: 'home',
                         href: '/',
                         title: 'HOME',
-                    },
-                    {
-                        key: 'about',
-                        href: '/about',
-                        title: 'ABOUT',
                     },
                     {
                         key: 'properties',

@@ -1,4 +1,4 @@
-import Image from "../img.jpeg";
+import Image from "../img.png";
 import { useNavigate } from "react-router-dom";
 
 const Logo = () => {
