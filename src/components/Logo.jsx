@@ -1,5 +1,6 @@
-import Image from "../img.png";
+import Image from "../assets/images/img.png";
 import { useNavigate } from "react-router-dom";
+import "../assets/css/logo.css";
 
 const Logo = () => {
     let navigate = useNavigate();
@@ -11,6 +12,7 @@ const Logo = () => {
 
     return (
         <div
+            className="logo-image"
             onClick={handleNavigate}
             style={{
                 maxWidth: 120,

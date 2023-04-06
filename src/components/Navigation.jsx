@@ -1,6 +1,6 @@
 import { Anchor } from 'antd';
 import Logo from './Logo';
-
+import "../assets/css/anchor.css";
 
 const Navbar = () => (
     <>
@@ -11,7 +11,7 @@ const Navbar = () => (
         >
             <Logo />
             <Anchor
-                style={{float:'right'}}
+                style={{display:"inline-block"}}
                 direction="horizontal"
                 items={[
                     {

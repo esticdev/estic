@@ -1,12 +1,11 @@
 import { Layout } from 'antd';
-import Navbar from './components/Navigation';
-import PublicRoutes from './routes/PublicRoutes';
+import Navbar from './Navigation';
+import PublicRoutes from '../routes/PublicRoutes';
 
 const { Content, Footer } = Layout;
 
 const AppLayout = () => {
   const contentStyle = {
-    textAlign: 'left',
     minHeight:'100vh'
   };
   return (

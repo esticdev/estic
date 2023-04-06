@@ -1,5 +1,5 @@
 import { Gallery } from "react-grid-gallery";
-import { images } from "./images";
+import { images } from "../redux/images";
 
 export default function PropertyGallery() {
   return (

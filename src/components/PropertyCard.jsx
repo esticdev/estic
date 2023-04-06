@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { Avatar, Card } from "antd";
-import "./cardStyles.css";
+import "../assets/css/cardStyles.css";
 
 const { Meta } = Card;
 

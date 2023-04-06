@@ -1,6 +1,6 @@
 import './App.css';
 import { ConfigProvider } from 'antd';
-import AppLayout from "./Layout";
+import AppLayout from "./components/Layout";
 
 function App() {
   return (

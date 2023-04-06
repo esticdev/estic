@@ -1,0 +1,12 @@
+/* For screens smaller than 768px (mobile and tablet view) */
+@media screen and (max-width: 767px) {
+  /* Hide the image */
+  .hero-image {
+    display: none !important;
+  }
+
+  /* Change the color of the text to black */
+  .about-text {
+    color: black !important;
+  }
+}
